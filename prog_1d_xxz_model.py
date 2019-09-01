@@ -7,6 +7,7 @@ import scipy as scipy
 import scipy.integrate as integrate
 
 if __name__ == "__main__":
+
     N = 100
     for icoseta in range(N):
         coseta = icoseta*1.0/N
@@ -17,7 +18,7 @@ if __name__ == "__main__":
             / (1-np.exp(-2*np.pi*x)) \
             / (1+np.exp(-2*c*x)) \
             , 0.0, np.inf, args=eta)
-        print (coseta,0.25*coseta-val[0]*np.sin(eta))
+        print("{0:.16f} {1:.16f} {2:.16f}".format(coseta,0.25*coseta-val[0]*np.sin(eta),val[1]))
 
-    print ("# exact (-1/pi):",0.0,-1.0/np.pi)
-    print ("# exact (1/4-ln2):",1.0,0.25-np.log(2.0))
+    print("# exact (-1/pi):",0.0,-1.0/np.pi)
+    print("# exact (1/4-ln2):",1.0,0.25-np.log(2.0))
