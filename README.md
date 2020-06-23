@@ -22,3 +22,4 @@
 
 * Kitaev honeycomb model
   * [DOI:10.1016/j.aop.2005.10.005](https://doi.org/10.1016/j.aop.2005.10.005)
+  * [arXiv:2006.11549](https://arxiv.org/abs/2006.11549)
